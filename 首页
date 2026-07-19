@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVelio - 环保餐具</title>
+    <meta name="description" content="EcoVelio - 专业环保餐具品牌，玉米淀粉/竹纤维/PLA可降解餐具">
+    <style>
+        :root { --green: #2d9a6e; --dark: #1a2332; --gray: #f5f7fa; --text: #4a5568; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system,'Segoe UI',Roboto,sans-serif; color: var(--text); line-height: 1.6; }
+        nav {
+            position: fixed; top: 0; width: 100%; z-index: 100;
+            background: rgba(255,255,255,.95); backdrop-filter: blur(10px);
+            border-bottom: 1px solid #eef0f3;
+            padding: 16px 40px;
+            display: flex; align-items: center; justify-content: space-between;
+        }
+        nav .logo { font-size: 22px; font-weight: 700; color: var(--dark); }
+        nav .logo span { color: var(--green); }
+        nav a { color: var(--text); text-decoration: none; margin-left: 32px; font-size: 14px; font-weight: 500; }
+        nav a:hover { color: var(--green); }
+        .hero {
+            min-height: 100vh;
+            display: flex; flex-direction: column; justify-content: center;
+            padding: 120px 40px 80px;
+            max-width: 1100px; margin: 0 auto;
+        }
+        .hero h1 { font-size: clamp(36px,6vw,64px); font-weight: 800; color: var(--dark); line-height: 1.15; }
+        .hero h1 span { color: var(--green); }
+        .hero p { font-size: clamp(16px,2vw,20px); margin: 24px 0 40px; max-width: 600px; }
+        .btn {
+            display: inline-block; padding: 14px 36px;
+            background: var(--green); color: #fff;
+            border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 15px;
+            transition: transform .2s, box-shadow .2s;
+        }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(45,154,110,.3); }
+        section { padding: 100px 40px; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        h2 { font-size: 32px; color: var(--dark); margin-bottom: 16px; }
+        .subtitle { font-size: 16px; margin-bottom: 48px; max-width: 500px; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap: 32px; }
+        .card { background: var(--gray); border-radius: 12px; padding: 36px 28px; transition: transform .2s; }
+        .card:hover { transform: translateY(-4px); }
+        .card .icon { font-size: 36px; margin-bottom: 16px; }
+        .card h3 { font-size: 18px; color: var(--dark); margin-bottom: 12px; }
+        .card p { font-size: 14px; color: var(--text); }
+        .stats { background: var(--dark); color: #fff; text-align: center; }
+        .stats h2 { color: #fff; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(180px,1fr)); gap: 40px; margin-top: 48px; }
+        .stat-num { font-size: 40px; font-weight: 800; color: var(--green); }
+        .stat-label { font-size: 14px; margin-top: 8px; opacity: .8; }
+        footer { text-align: center; padding: 40px; font-size: 13px; color: #889; border-top: 1px solid #eef0f3; }
+        @media (max-width: 640px) { nav { padding: 16px 20px; } nav a { margin-left: 20px; } .hero, section { padding-left: 20px; padding-right: 20px; } }
+    </style>
+</head>
+<body>
+<nav>
+    <div class="logo">Eco<span>Velio</span></div>
+    <div><a href="#about">产品</a><a href="#features">优势</a><a href="#contact">联系</a></div>
+</nav>
+<section class="hero">
+    <h1>为地球<br>换个好餐具</h1>
+    <p>EcoVelio 专注环保餐具研发与生产，玉米淀粉、竹纤维、PLA 等全降解材料，让每一餐都更环保。</p>
+    <a href="#contact" class="btn">了解更多</a>
+</section>
+<section id="about" class="container">
+    <h2>产品系列</h2>
+    <p class="subtitle">全降解材料，品质与环保兼得。</p>
+    <div class="grid-3">
+        <div class="card"><div class="icon">🌽</div><h3>玉米淀粉系列</h3><p>天然玉米淀粉基材料，可堆肥降解，耐热耐冷，适用于外卖、快餐场景。</p></div>
+        <div class="card"><div class="icon">🎋</div><h3>竹纤维系列</h3><p>天然竹纤维 + 密胺树脂，质感温润，可重复使用，适合家庭、食堂。</p></div>
+        <div class="card"><div class="icon">♻️</div><h3>PLA 聚乳酸系列</h3><p>100% 生物基材料，工业堆肥 180 天完全降解，透明质感，高端之选。</p></div>
+    </div>
+</section>
+<section id="features" class="container">
+    <h2>为什么选择我们</h2>
+    <p class="subtitle">品质、环保、价格三重优势。</p>
+    <div class="grid-3">
+        <div class="card"><h3>工厂直供</h3><p>自有生产基地，从原料到成品全链路品控，价格更具竞争力。</p></div>
+        <div class="card"><h3>国际认证</h3><p>FDA、LFGB、OK Compost 等国际认证齐全，出口无忧。</p></div>
+        <div class="card"><h3>定制服务</h3><p>支持 LOGO 印刷、规格定制、包装设计，打造您的专属品牌。</p></div>
+    </div>
+</section>
+<section class="stats">
+    <div class="container">
+        <h2>数据说话</h2>
+        <p class="subtitle" style="color:#889;margin:0 auto;">持续增长的环保力量</p>
+        <div class="stats-grid">
+            <div><div class="stat-num">5000万+</div><div class="stat-label">年产量（件）</div></div>
+            <div><div class="stat-num">30+</div><div class="stat-label">出口国家</div></div>
+            <div><div class="stat-num">100%</div><div class="stat-label">可降解材料</div></div>
+            <div><div class="stat-num">200+</div><div class="stat-label">合作品牌</div></div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="container" style="text-align:center;">
+    <h2>联系我们</h2>
+    <p class="subtitle" style="margin:0 auto 32px;">获取样品或了解更多</p>
+    <p style="margin-bottom:8px;">📧 info@ecovelio.com</p>
+    <p style="margin-bottom:8px;">📞 +86 400-xxx-xxxx</p>
+    <br>
+    <a href="mailto:info@ecovelio.com" class="btn">发送邮件</a>
+</section>
+<footer><p>&copy; 2026 EcoVelio. All rights reserved. | ecovelio.qianfytrade.com</p></footer>
+</body>
+</html>
